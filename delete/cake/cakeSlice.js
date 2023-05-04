@@ -1,14 +1,10 @@
+// import createSlice function
 const createSlice = require('@reduxjs/toolkit').createSlice;
 
 const initialState = {
     numberOfCakes: 10
 };
 
-/*
-* createSlice
- - Will automatically generate action creators with the same name as the reducer function
- - The main reducer is also returned from the createSlice which we provide to the redux store
-*/
 const cakeSlice = createSlice({
     name: 'cake',
     initialState,
@@ -22,8 +18,9 @@ const cakeSlice = createSlice({
     }
 });
 
-// default export
-module.exports = cakeSlice.reducer
 
-// named export 
+// Default export
+module.exports = cakeSlice.reducer;
+
+// Named export
 module.exports.cakeActions = cakeSlice.actions;
