@@ -6,7 +6,7 @@ const initialState = {
 
 /*
 * createSlice
- - Will automatically generate action creators with the same name as the reducer function
+ - Will automatically generate action types and action creators 
  - The main reducer is also returned from the createSlice which we provide to the redux store
 */
 const cakeSlice = createSlice({
